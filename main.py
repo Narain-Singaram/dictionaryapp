@@ -13,6 +13,7 @@ def home():
 def api_pg(word):
     defn = df.loc[df["word"] == word]['definition'].squeeze()
     print(defn)
+
     return render_template("input_word.html", inp_wrd=word.capitalize(), out_defn=defn)
 
 
