@@ -11,9 +11,9 @@ def home():
 
 @app.route("/api/v1/<word>")
 def api_pg(word):
-    definition = df.loc[df["word"] == word]['definition'].squeeze()
-    result_dictionary = {"word": word, 'definition': definition}
-    return result_dictionary
+    defn = df.loc[df["word"] == word]['definition'].squeeze()
+    result_dictionary = {"word": word, 'definition': defn}
+    return render_template("input_word.html", inp_wrd=word.capitalize(), out_defn=defn)
 
 
 if __name__ == "__main__":
