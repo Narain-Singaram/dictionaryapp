@@ -8,7 +8,43 @@
     <title>Vocab Word</title>
 </head>
 <body>
-        <h1> {{ inp_wrd }}</h1>
-        <p>Definition: {{ out_defn }}</p>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 -10px;
+    }
+    dt {
+      flex: 0 0 45%;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0 10px 20px;
+      color: #333;
+    }
+    dd {
+      flex: 0 0 45%;
+      font-size: 1em;
+      margin: 0 10px 20px;
+      color: #666;
+    }
+  </style>
+  <h1>Dictionary</h1>
+  <dl>
+    <dt>{{ inp_wrd }}</dt>
+    <dd>{{ out_defn }}</dd>
+  </dl>
 </body>
 </html>
+
