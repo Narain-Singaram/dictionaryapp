@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <title>API Resource Website</title>
+    <title>Definify</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <h1>Definify - Define A Word</h1>
+            <h1>Definify - Link Dictionary</h1>
         </header>
 
         <nav>
@@ -21,8 +21,7 @@
         </nav>
 
         <section>
-            <h2>Find A Word</h2>
-            <p>Head to the URL http://127.0.0.1:5001/api/v1/elephant and you'll find a wealth of knowledge at your fingertips! By simply changing the end of the URL to whatever word you would like, you can find the definition of that particular word. It's an easy, quick way to access a dictionary for any word you could think of. Try it today and let the power of knowledge be yours!
+            <p>Head to the URL <a target=”_blank” href="http://127.0.0.1:5001/api/v1/elephant">http://127.0.0.1:5001/api/v1/elephant</a> and by simply changing the end of the URL to whatever word you would like, you can find the definition of that particular word.
 </p>
         </section>
     </div>
@@ -31,25 +30,24 @@
 </html>
 
 <style>
-    body {
-    font-family: sans-serif;
+    html {
+    font-family: Times New Roman !important;
     background-color: #fafafa;
     color: #444;
 }
 
 .wrapper {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
 header {
     text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
 }
 
 header h1 {
@@ -60,14 +58,23 @@ header h1 {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 5px;
     display: flex;
+    justify-content: center
 }
 
 nav li {
     margin-right: 10px;
+    background-color: #ddd;
+    padding: 10px 15px;
+    border-radius: 50px;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+nav li:hover {
+    background-color: #ccc;
+    transition: .25s;
 }
 
 nav a {
@@ -75,9 +82,14 @@ nav a {
     text-decoration: none;
 }
 
-p {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
+a:hover {
+    color: red;
+    transition: .25s;
+}
+
+section p {
+    font-size: 20px;
+    padding: 10px;
     line-height: 1.5;
     color: #333333;
     margin: 0 0 16px 0;
