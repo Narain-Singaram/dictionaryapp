@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 df = pd.read_csv("word_table.csv")
 
