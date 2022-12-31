@@ -10,16 +10,9 @@
 </head>
 <body>
   <h1>Definify</h1>
-    <input type="text" id="myInput" value="{{ inp_wrd }}" oninput="updateText()">
+    <input type="text" id="myInput" value="{{ inp_wrd }}" oninput="updateLinkAndText()">
 
-    <p class="text">Go to this link to get the word you gave: <p id="dynamicText"></p></p>
-
-    <script>
-    function updateText() {
-      document.getElementById("dynamicText").innerHTML = "http://127.0.0.1:5001/api/v1/" + document.getElementById("myInput").value;
-      window.onload = updateText;
-    }
-    </script>
+    <p id="overallText" class="text">Go to this link to get the word you gave: <a href="" id="dynamicText"></a></p>
   <dl>
     <dt>{{ inp_wrd }} <span>Input Word</span></dt>
     <dd>
@@ -27,7 +20,7 @@
     </dd>
   </dl>
 
-
+<script src="{{ url_for('static', filename='input_word.js') }}"></script>
 </body>
 </html>
 
