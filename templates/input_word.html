@@ -10,12 +10,24 @@
 </head>
 <body>
   <h1>Definify</h1>
+    <input type="text" id="myInput" value="{{ inp_wrd }}" oninput="updateText()">
+
+    <p class="text">Go to this link to get the word you gave: <p id="dynamicText"></p></p>
+
+    <script>
+    function updateText() {
+      document.getElementById("dynamicText").innerHTML = "http://127.0.0.1:5001/api/v1/" + document.getElementById("myInput").value;
+      window.onload = updateText;
+    }
+    </script>
   <dl>
     <dt>{{ inp_wrd }} <span>Input Word</span></dt>
     <dd>
         <pre><span>Definitions</span> <br> <inline>{{ out_defn|safe }}</inline></pre>
     </dd>
   </dl>
+
+
 </body>
 </html>
 
