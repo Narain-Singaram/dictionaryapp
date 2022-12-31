@@ -14,6 +14,9 @@ def api_pg(word):
     defn = df.loc[df["word"] == word]['definition'].squeeze()
     print(defn)
 
+    if str(defn) == "Series([], Name: definition, dtype: object)":
+        defn = "This phrase is not a legitimate term. Please try again and submit a valid word. Examples of valid words include: elephant, oranges, material, and organize."
+
     return render_template("input_word.html", inp_wrd=word.capitalize(), out_defn=defn)
 
 
