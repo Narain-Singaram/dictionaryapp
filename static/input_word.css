@@ -4,7 +4,8 @@
       font-family: Poppins, sans-serif;
       margin: 0;
       padding: 0;
-      background: #eee;
+      background: rgb(13, 17, 23);
+      color: rgb(201, 209, 217);
     }
 
     h1 {
@@ -12,7 +13,7 @@
       margin: 20px 0;
       font-size: 32px;
       font-weight: bold;
-      color: #333;
+      color: rgb(201, 209, 217)
     }
 
     dl {
@@ -20,7 +21,8 @@
       margin: 2.5rem auto;
       padding: 20px;
       box-sizing: border-box;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;      background-color: #f8f8f8;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      background-color: rgb(22, 27, 34);
       border-radius: 10px;
     }
 
@@ -28,34 +30,34 @@
       font-size: 32px;
       font-weight: bold;
       margin: 5px 10px;
-      color: #333;
+      color: rgb(201, 209, 217);
     }
 
     dt span {
     font-size: 12px;
-    font-weight: light;
-    background: #ddd;
+    color: rgb(201, 209, 217);
+    background: rgb(75, 85, 99);
     padding: 5px 10px;
     border-radius: 10px;
     }
 
     dd {
       font-size: 18px;
-      color: #666;
+      color: rgb(201, 209, 217);
       margin: 0;
     }
 
     pre {
       white-space: pre-wrap;
       font-family: Poppins, sans-serif;
-      background: #eee;
+      background: rgb(44, 52, 64);
       padding: 20px 15px;
       border-radius: 10px;
     }
 
     pre:hover {
-        background: #ddd;
-        color: black;
+        background: rgb(75, 85, 99);
+        color: white;
         transition: .25s;
         transition-timing-function: ease-in-out
     }
@@ -88,7 +90,7 @@
     }
 
     #dynamicText {
-            display: block;
+        display: block;
         width: fit-content;
         margin: auto;
         margin-top: 10px;
