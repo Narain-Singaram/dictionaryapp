@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='input_word.css') }}">
 </head>
 <body>
-  <h1>Dictionary</h1>
+  <h1>Definify</h1>
   <dl>
-    <dt>{{ inp_wrd }}</dt>
-    <dd><pre>{{ out_defn|safe }}</pre></dd>
+    <dt>{{ inp_wrd }} <span>(Input Word)</span></dt>
+    <dd>
+        <pre><span>Definitions</span> <br> <inline>{{ out_defn|safe }}</inline></pre>
+    </dd>
   </dl>
 </body>
 </html>
