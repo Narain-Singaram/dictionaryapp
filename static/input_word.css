@@ -4,6 +4,7 @@
       font-family: Poppins, sans-serif;
       margin: 0;
       padding: 0;
+      background: #eee;
     }
 
     h1 {
@@ -19,9 +20,8 @@
       margin: 0 auto;
       padding: 20px;
       box-sizing: border-box;
-      background-color: #f8f8f8;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;      background-color: #f8f8f8;
+      border-radius: 10px;
     }
 
     dt {
@@ -34,6 +34,9 @@
     dt span {
     font-size: 12px;
     font-weight: light;
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 10px;
     }
 
     dd {
@@ -45,16 +48,14 @@
     pre {
       white-space: pre-wrap;
       font-family: Poppins, sans-serif;
-      background: #ddd;
+      background: #eee;
       padding: 20px 15px;
       border-radius: 10px;
     }
 
     pre:hover {
-        background: #222;
-        color: white;
-        border-radius: 15px;
-        transform: scale(1.01);
+        background: #ddd;
+        color: black;
         transition: .25s;
         transition-timing-function: ease-in-out
     }
